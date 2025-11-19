@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Dynamic Cart</h2>
+        
+        <div id="mainButtons">
+            <button onclick="showAddInputs()">Add Item</button>
+            <button onclick="showUpdateInputs()">Update Item</button>
+            <button onclick="toggleCart()">Display Cart</button>
+        </div>
+
+        <div id="inputSection" style="display: none; ">
+            <input type="text" id="itemName" placeholder="Item Name">
+            <input type="number" id="itemPrice" placeholder="Price">
+            <input type="number" id="itemQty" placeholder="Quantity">
+
+            <button id="saveBtn" onclick="" ></button>
+        </div>
+
+        <div id="cartSection" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="cartBody"></tbody>
+            </table>
+
+            <h3>Grant Total: ₹ <span id="totalPrice">0</span></h3>
+
+            <p>Hi</p>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

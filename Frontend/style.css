@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container h2 {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 30%;
+    padding: 8px;
+    margin: 5px 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px 2px;
+    cursor: pointer;
+    background: #007bff;
+    border: none;
+    color: white;
+    border-radius: 15px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#cartSection h3 {
+    margin:20px 0;
+    text-align: center;
+
+}
